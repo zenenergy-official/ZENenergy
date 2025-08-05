@@ -94,7 +94,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* Burger меню */
 .burger-menu {
   display: none;
   flex-direction: column;

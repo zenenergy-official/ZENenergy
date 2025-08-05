@@ -62,8 +62,7 @@ export default function Header() {
           <div className="burger-line w-full h-0.5 bg-primary transition-all"></div>
         </div>
       </header>
-
-      <div className={`mobile-nav fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-screen bg-light shadow-lg p-[80px_30px_30px] transition-all z-40 ${isMenuOpen ? 'right-0' : ''}`}>
+    <div className={`mobile-nav fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-screen bg-light shadow-lg p-[80px_30px_30px] transition-all z-40 ${isMenuOpen ? 'active' : ''}`}>
         <Link href="/" className="block py-4 text-text font-medium border-b border-[rgba(0,0,0,0.1)] hover:text-accent" onClick={closeMenu}>
           Головна
         </Link>
