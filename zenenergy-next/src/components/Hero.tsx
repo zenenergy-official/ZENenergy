@@ -9,8 +9,8 @@ const Hero = () => {
           <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-tight tracking-tight mb-6">
             Нова ера спорту — <span className="text-accent">Sport 2.0</span>
           </h1>
-          <p className="text-[clamp(1rem,2vw,1.25rem)] text-text-light max-w-[600px] mb-10">
-            Поєднання фізичної активності, ментального здоров'я та сучасних технологій для досягнення гармонії тіла та розуму.
+          <p className="text-[clamp(1rem,2vw,1.25rem)] text-black  max-w-[600px] mb-10">
+            Поєднання фізичної активності, ментального здоров&apos;я та сучасних технологій для досягнення гармонії тіла та розуму.
           </p>
           <div className="hero-btns">
             <Link href="#products" className="btn">

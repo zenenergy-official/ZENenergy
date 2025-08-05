@@ -32,7 +32,7 @@ const Contact = () => {
     <section id="contact" className="py-32 relative">
       <div className="container">
         <div className="section-header" data-aos="fade-up">
-          <h2>Зв'яжіться з нами</h2>
+          <h2>Зв&apos;яжіться з нами</h2>
           <p className="section-subtitle">
             Ми завжди раді новим ідеям та співпраці
           </p>
