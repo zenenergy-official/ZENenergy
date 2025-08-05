@@ -1,53 +1,54 @@
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+'use client'
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
+      setIsScrolled(window.scrollY > 10)
+    }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    document.body.style.overflow = isMenuOpen ? '' : 'hidden';
-  };
+    setIsMenuOpen(!isMenuOpen)
+    document.body.style.overflow = isMenuOpen ? '' : 'hidden'
+  }
 
   const closeMenu = () => {
-    setIsMenuOpen(false);
-    document.body.style.overflow = '';
-  };
+    setIsMenuOpen(false)
+    document.body.style.overflow = ''
+  }
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full py-6 px-[5vw] flex justify-between items-center z-50 transition-all ${isScrolled ? 'bg-[rgba(245,245,247,0.95)] shadow-sm' : 'bg-[rgba(245,245,247,0.8)]'} backdrop-blur-lg`}>
-        <Link href="/" className="logo font-bold text-2xl">
+      <header className={`fixed top-0 left-0 w-full py-6 px-[5vw] flex justify-between items-center z-50 ${isScrolled ? 'bg-[rgba(245,245,247,0.95)] shadow-sm' : 'bg-[rgba(245,245,247,0.8)]'} backdrop-blur-lg`}>
+        <Link href="/" className="logo font-bold text-[1.8rem] tracking-tight">
           ZEN<span className="text-accent">energy</span>
         </Link>
         
         <nav className="hidden md:flex gap-8">
-          <Link href="/" className="text-sm font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="/" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             Головна
           </Link>
-          <Link href="/quiz" className="text-sm font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="/quiz" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             ZEN-quiz
           </Link>
-          <Link href="#mission" className="text-sm font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="#mission" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             Місія
           </Link>
-          <Link href="#products" className="text-sm font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="#products" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             Продукти
           </Link>
-          <Link href="#bot" className="text-sm font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="#bot" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             Бот
           </Link>
-          <Link href="#contact" className="text-sm font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="#contact" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             Контакти
           </Link>
         </nav>
@@ -88,7 +89,5 @@ const Header = () => {
         onClick={closeMenu}
       ></div>
     </>
-  );
-};
-
-export default Header;
+  )
+}
