@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact">
       <div className="container">
         <div className="section-header" data-aos="fade-up">
-          <h2>Зв'яжіться з нами</h2>
+          <h2>Зв&lsquo;яжіться з нами</h2>
           <p className="section-subtitle">Ми завжди раді новим ідеям та співпраці</p>
         </div>
         <div className="contact-grid">

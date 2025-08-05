@@ -11,7 +11,7 @@ export default function Mission() {
         <div className="mission-cards">
           <div className="mission-card" data-aos="fade-up" data-aos-delay="100">
             <h3>Баланс</h3>
-            <p>Поєднуємо фізичні тренування з практиками ментального здоров'я для досягнення гармонії.</p>
+            <p>Поєднуємо фізичні тренування з практиками ментального здоров&apos;я для досягнення гармонії.</p>
           </div>
           <div className="mission-card" data-aos="fade-up" data-aos-delay="200">
             <h3>Технології</h3>
@@ -19,7 +19,7 @@ export default function Mission() {
           </div>
           <div className="mission-card" data-aos="fade-up" data-aos-delay="300">
             <h3>Спільнота</h3>
-            <p>Об'єднуємо однодумців, які прагнуть розвитку та самовдосконалення.</p>
+            <p>Об&apos;єднуємо однодумців, які прагнуть розвитку та самовдосконалення.</p>
           </div>
         </div>
       </div>
