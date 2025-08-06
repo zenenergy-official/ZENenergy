@@ -19,6 +19,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.back-button {
+          display: block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #f0f0f0;
+          color: #333;
+          text-align: center;
+          justify-content: center;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: 500;
+          transition: background-color 0.3s;
+        }
+        .back-button:hover {
+          background-color: #e0e0e0;
+        }
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--light);
@@ -225,6 +242,8 @@ h1 {
   font-size: 1rem;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 .btn:hover {

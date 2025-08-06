@@ -33,7 +33,7 @@ export default function Header() {
         </Link>
         
         <nav className="hidden md:flex gap-8">
-          <Link href="/" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
+          <Link href="/" className="headder text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">
             Головна
           </Link>
           <Link href="/quiz" className="text-[0.95rem] font-medium hover:text-accent relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full">

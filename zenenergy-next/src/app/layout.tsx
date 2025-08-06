@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ZENengine",
-  description: "Ми - це ZENengine, ми це команда.",
+  title: "ZENenergy",
+  description: "Ми - це ZENenergy, ми це команда.",
 };
 
 export default function RootLayout({

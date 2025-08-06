@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 type QuizOption = {
   text: string
@@ -142,7 +143,6 @@ export default function QuizPage() {
 
   const progress = showResult ? 100 : ((currentQuestion + 1) / quizQuestions.length) * 100;
 
-
   return (
     <>
       <Head>
@@ -173,6 +173,9 @@ export default function QuizPage() {
                 </div>
               ))}
             </div>
+            <Link href="/" className="back-button">
+              На головну
+            </Link>
           </div>
         ) : (
           <div className={`quiz-result ${showResult ? 'active' : ''}`}>
@@ -180,13 +183,16 @@ export default function QuizPage() {
             <h3 className="result-title">{result?.title}</h3>
             <p className="result-description">{result?.description}</p>
             <div className="result-products font-weight: 700">
-             <h4 className='font-bold'> Рекомендовані продукти:</h4>
+              <h4 className='font-bold'>Рекомендовані продукти:</h4>
               <ul>
                 {result?.products.map((product, index) => (
                   <li key={index}>{product}</li>
                 ))}
               </ul>
             </div>
+            <Link href="/" className="back-button">
+              На головну
+            </Link>
           </div>
         )}
       </div>
